@@ -275,7 +275,7 @@ MonoBehaviour:
   - {fileID: 1914777517}
   - {fileID: 1976110376}
   yea: {fileID: 1225217618}
-  Prueba: {x: 0.6, y: -0.6}
+  Prueba: {x: 0.6, y: -0.6, z: 0}
   allPatrones:
   - PatronName: Cuadrado
     Patron:
@@ -981,11 +981,6 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 634092129}
   m_CullTransparentMesh: 0
---- !u!1 &687441801 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1000011248716996, guid: 95d89d17e485e9146bd96898b1fd08f5,
-    type: 2}
-  m_PrefabInternal: {fileID: 1761198115}
 --- !u!114 &687441802 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 114000011738864882, guid: 95d89d17e485e9146bd96898b1fd08f5,
@@ -997,53 +992,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 224000012404245918, guid: 95d89d17e485e9146bd96898b1fd08f5,
     type: 2}
   m_PrefabInternal: {fileID: 1761198115}
---- !u!114 &687441805
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 687441801}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1862395651, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 0
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 300287650}
-          m_MethodName: PaintBeads
-          m_Mode: 2
-          m_Arguments:
-            m_ObjectArgument: {fileID: 687441802}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Image, UnityEngine.UI
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
-        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  - eventID: 2
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 300287650}
-          m_MethodName: PaintBeads
-          m_Mode: 2
-          m_Arguments:
-            m_ObjectArgument: {fileID: 687441802}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Image, UnityEngine.UI
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
-        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  delegates: []
 --- !u!1 &749887488
 GameObject:
   m_ObjectHideFlags: 0
@@ -2290,10 +2238,16 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 1000011248716996, guid: 95d89d17e485e9146bd96898b1fd08f5, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
+    - target: {fileID: 114373739542232114, guid: 95d89d17e485e9146bd96898b1fd08f5,
+        type: 2}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 300287650}
+    - target: {fileID: 114373739542232114, guid: 95d89d17e485e9146bd96898b1fd08f5,
+        type: 2}
+      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 300287650}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 95d89d17e485e9146bd96898b1fd08f5, type: 2}
   m_IsPrefabAsset: 0
